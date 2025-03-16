@@ -85,6 +85,10 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+
+      - name: Set up environment
+        run: |
+          apk update && apk upgrade --no-cache
       
       - name: Download build artifacts
         uses: actions/download-artifact@v4
