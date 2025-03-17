@@ -19,7 +19,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '23'
           cache: 'npm'
       
       - name: Install dependencies
@@ -38,7 +38,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '23'
           cache: 'npm'
       
       - name: Install dependencies
@@ -58,7 +58,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '23'
           cache: 'npm'
       
       - name: Install dependencies
@@ -85,15 +85,7 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-<<<<<<< HEAD
-      
-      - name: Set up environment
-        run: |
-          apk update && apk upgrade --no-cache
-      
-=======
-           
->>>>>>> e22a205e4a56438e1964eee1e881d7d6a85ceaab
+ 
       - name: Download build artifacts
         uses: actions/download-artifact@v4
         with:
